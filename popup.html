@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Link Librarian - Add Bookmark</title>
+    <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+    <header>
+        <h1>Link Librarian</h1>
+    </header>
+    <form id="bookmarkForm">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div class="form-group">
+            <label for="category">Category</label>
+            <input type="text" id="category" name="category">
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="button" id="saveBookmark">Add Bookmark</button>
+        </div>
+    </form>
+    <footer>
+        <button type="button" id="btnManager">Manage Bookmarks</button>
+    </footer>
+    <script src="scripts/util.js"></script>
+    <script src="scripts/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@import "common.css";
+
+body {
+    font-size: 0.85em;
+}
+
+header,
+footer {
+	padding: 10px 30px;
+}
+
+form {
+	padding: 20px 30px 20px 20px;
+}
+
+footer {
+	border-top: solid 1px var(--btn-border-color);
+}
+
+h1 {
+	font-size: 18px;
+}
+
+form {
+	width: 360px;
+}
+
+form input,
+form textarea {
+	font-size: 10px;
+	width: 100%;
+}

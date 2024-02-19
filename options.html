@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Options - Link Librarian</title>
+    <link rel="stylesheet" href="styles/options.css">
+</head>
+<body>
+    <h1>Options</h1>
+    <div id="status"></div>
+    <form id="optionsForm">
+        <div class="form-group">
+            <label for="apiKey">Watson API Key:</label>
+            <input type="text" id="watsonApiKey" name="watsonApiKey"><br>
+        </div>
+        <div class="form-group">
+            <label for="serviceUrl">Watson Service URL:</label>
+            <input type="text" id="watsonServiceUrl" name="watsonServiceUrl"><br>
+        </div>
+        <div class="form-group">
+            <label for="syncEnabled">Enable Syncing:</label>
+            <input type="checkbox" id="syncEnabled" name="syncEnabled">
+        </div>
+        <div class="form-group">
+            <button type="button">Save</button>
+        </div>
+    </form>
+    <script src="scripts/options.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+    <link rel="stylesheet" href="styles/manager.css">
+</head>
+<body>
+	<header>
+		<h1>Link Librarian</h1>
+		<nav id="toolbar">
+			<div id="bookmarkActions">
+				<button type="button" id="deleteSelectedBookmarks" title="Delete Selected Bookmarks" disabled="disabled">Delete</button>
+				<button type="button" id="updateMissingThumbnails" title="Update Thumbnails">Thumbnails</button>
+				<button type="button" id="cleanupBookmarks" title="Cleanup Bookmarks">Cleanup</button>
+			</div>
+			<div id="fileActions">
+				<button type="button" id="importBookmarks" aria-label="Import Bookmarks" title="Import Bookmarks">Import</button>
+				<input type="file" id="fileInput" accept=".txt, .csv" style="display: none;">
+				<button type="button" id="exportBookmarksCSV" aria-label="Export Bookmarks to CSV" title="Export Bookmarks to CSV">Export</button>
+			</div>
+		</nav>
+	</header>
+    <main>
+        <div id="bookmarksContainer">
+            <!-- Dynamically added bookmark cards will go here -->
+        </div>
+		<aside id="sidebar">
+			<!-- Detailed information about the selected bookmark(s) will be displayed here -->
+		</aside>
+	</main>
+    <script src="scripts/util.js"></script>
+    <script src="scripts/manager.js"></script>
+</body>
+</html>

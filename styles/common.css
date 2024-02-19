@@ -1,0 +1,88 @@
+:root {
+	--background-color: #d2d2d2;
+	--text-color: #000;
+	--highlight-color: #330066;
+	--buttonColor: #0056b3;
+	--link-color: #021d3a;
+	--btn-bg-color: #f0f0f0; /* Button background */
+	--btn-text-color: #000; /* Button text */
+	--btn-border-color: #ccc; /* Button border */
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-color: #1a1a1a;
+		--text-color: #fff;
+		--link-color: #1a1ad2;
+		--btn-bg-color: #333; /* Button background */
+		--btn-text-color: #fff; /* Button text */
+		--btn-border-color: #555; /* Button border */
+	}
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--link-color);
+}
+
+header {
+    background-color: var(--btn-bg-color);
+}
+
+h1, h2, h3 {
+	font-family: Baskerville, Palatino, serif;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 2.8em;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 2.2em;
+}
+
+h3 {
+	font-size: 1.8em;
+}
+
+button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--buttonColor);
+}
+
+button:disabled {
+	opacity: 0.35;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="checkbox"] {
+    font-size: 16px;
+    padding: 5px;
+}

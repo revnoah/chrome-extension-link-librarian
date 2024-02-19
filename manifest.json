@@ -1,0 +1,57 @@
+{
+	"manifest_version": 3,
+	"name": "Link Librarian",
+	"description": "A Chrome extension for managing bookmarks with enhanced features.",
+	"version": "1.0",
+	"icons": {
+	  "48": "images/icon.png"
+	},
+	"action": {
+	  "default_icon": "images/icon.png",
+	  "default_title": "Open Link Librarian",
+	  "default_popup": "popup.html"
+	},
+	"background": {
+	  "service_worker": "scripts/background.js"
+	},
+	"permissions": [
+	  "storage",
+	  "tabs",
+	  "bookmarks",
+	  "history",
+	  "activeTab",
+	  "scripting",
+	  "commands",
+	  "contextMenus"
+	],
+	"host_permissions": [
+	  "<all_urls>"
+	],
+	"options_page": "options.html",
+	"content_scripts": [
+	  {
+		"matches": ["<all_urls>"],
+		"js": ["scripts/content.js"]
+	  }
+	],
+	"commands": {
+		"open-custom-bookmark-form": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+Y",
+				"mac": "Command+Shift+Y"
+			},
+			"description": "Open custom Add Bookmark form"
+		}
+	},	
+	"web_accessible_resources": [
+	  {
+		"resources": [
+		  "images/*",
+		  "scripts/*",
+		  "styles/*"
+		],
+		"matches": ["<all_urls>"]
+	  }
+	]
+  }
+  
